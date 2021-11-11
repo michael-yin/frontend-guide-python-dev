@@ -8,5 +8,5 @@
 1. Now matter if you are using Django, Flask, FastAPI, this guide can help.
 1. It is **open source**, and I wish the whole community can help improve it to help more people.
 
-👉 [Frontend Guide For Python Dev](https://michael-yin.github.io/frontend-guide-python-dev/)
+## LINK: [Frontend Guide For Python Dev](https://michael-yin.github.io/frontend-guide-python-dev/)
 
