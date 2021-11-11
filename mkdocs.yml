@@ -1,6 +1,7 @@
 site_name: Frontend Guide For Python Dev
 site_url: https://michael-yin.github.io/frontend-guide-python-dev/
 repo_url: https://github.com/michael-yin/frontend-guide-python-dev
+edit_uri: ""
 theme:
   name: "material"
   palette:
