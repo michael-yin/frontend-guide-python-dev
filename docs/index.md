@@ -7,3 +7,8 @@
 1. It contains details of the different architectures, you can learn and choose the correct one for your Python web project.
 1. Now matter if you are using Django, Flask, FastAPI, this guide can help.
 1. It is **open source**, and I wish the whole community can help improve it to help more people.
+
+## Other projects
+
+* [based-jace/combining-flask-with-vue](https://github.com/based-jace/combining-flask-with-vue)
+
