@@ -1,0 +1,38 @@
+name: Publish docs via GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Setup doc deploy
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.${GITHUB_DOMAIN:-"github.com"}"
+
+      - name: Deploy
+        run: |
+          echo "setup with GITHUB_TOKEN"
+          remote_repo="https://x-access-token:${GITHUB_TOKEN}@${GITHUB_DOMAIN:-"github.com"}/${GITHUB_REPOSITORY}.git"
+          echo "$remote_repo"
+
+          git remote rm origin
+          git remote add origin "${remote_repo}"
+
+          mkdocs gh-deploy --force

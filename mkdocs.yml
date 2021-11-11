@@ -1,0 +1,24 @@
+site_name: Frontend Guide For Python Dev
+site_url: https://michael-yin.github.io/frontend-guide-python-dev/
+repo_url: https://github.com/michael-yin/frontend-guide-python-dev
+theme:
+  name: "material"
+  palette:
+    primary: teal
+markdown_extensions:
+  - codehilite
+  - pymdownx.superfences:
+  - markdown.extensions.admonition:
+  - pymdownx.details
+plugins:
+  - search
+nav:
+  - Introduction: index.md
+  - Terminology: basic_concepts.md
+  - Code Style: code_style.md
+  - Single page application: spa.md
+  - Server side rendering: ssr.md
+  - Jamstack: jamstack.md
+  - Classic architecture: classic.md
+  - React, Vue in template: react_vue_template.md
+  - Node SSR service: node_ssr_service.md
